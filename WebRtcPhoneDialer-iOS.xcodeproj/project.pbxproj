@@ -6,6 +6,106 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BF01 = { isa = PBXBuildFile; fileRef = FILE01; };
+		BF02 = { isa = PBXBuildFile; fileRef = FILE02; };
+		BF03 = { isa = PBXBuildFile; fileRef = FILE03; };
+		BF04 = { isa = PBXBuildFile; fileRef = FILE04; };
+		BF05 = { isa = PBXBuildFile; fileRef = FILE05; };
+		BF06 = { isa = PBXBuildFile; fileRef = FILE06; };
+		BF07 = { isa = PBXBuildFile; fileRef = FILE07; };
+		BF08 = { isa = PBXBuildFile; fileRef = FILE08; };
+		BF09 = { isa = PBXBuildFile; fileRef = FILE09; };
+		BF10 = { isa = PBXBuildFile; fileRef = FILE10; };
+		BF11 = { isa = PBXBuildFile; fileRef = FILE11; };
+		BF12 = { isa = PBXBuildFile; fileRef = FILE12; };
+		BF13 = { isa = PBXBuildFile; fileRef = FILE13; };
+		BF14 = { isa = PBXBuildFile; fileRef = FILE14; };
+		BF15 = { isa = PBXBuildFile; fileRef = FILE15; };
+		BF16 = { isa = PBXBuildFile; fileRef = FILE16; };
+		BF17 = { isa = PBXBuildFile; fileRef = FILE17; };
+		BF18 = { isa = PBXBuildFile; fileRef = FILE18; };
+		BF19 = { isa = PBXBuildFile; fileRef = FILE19; };
+		BF20 = { isa = PBXBuildFile; fileRef = FILE20; };
+		BF21 = { isa = PBXBuildFile; fileRef = FILE21; };
+		BF22 = { isa = PBXBuildFile; fileRef = FILE22; };
+		BF23 = { isa = PBXBuildFile; fileRef = FILE23; };
+		BF24 = { isa = PBXBuildFile; fileRef = FILE24; };
+		BF25 = { isa = PBXBuildFile; fileRef = FILE25; };
+		BF26 = { isa = PBXBuildFile; fileRef = FILE26; };
+		BF27 = { isa = PBXBuildFile; fileRef = FILE27; };
+		BF28 = { isa = PBXBuildFile; fileRef = FILE28; };
+		BF29 = { isa = PBXBuildFile; fileRef = FILE29; };
+		BF30 = { isa = PBXBuildFile; fileRef = FILE30; };
+		BF31 = { isa = PBXBuildFile; fileRef = FILE31; };
+		BF32 = { isa = PBXBuildFile; fileRef = FILE32; };
+		BF33 = { isa = PBXBuildFile; fileRef = FILE33; };
+		BF34 = { isa = PBXBuildFile; fileRef = FILE34; };
+		BF35 = { isa = PBXBuildFile; fileRef = FILE35; };
+		BF36 = { isa = PBXBuildFile; fileRef = FILE36; };
+		BF37 = { isa = PBXBuildFile; fileRef = FILE37; };
+		BF38 = { isa = PBXBuildFile; fileRef = FILE38; };
+		BF39 = { isa = PBXBuildFile; fileRef = FILE39; };
+		BF40 = { isa = PBXBuildFile; fileRef = FILE40; };
+		BF41 = { isa = PBXBuildFile; fileRef = FILE41; };
+		BF42 = { isa = PBXBuildFile; fileRef = FILE42; };
+		BF43 = { isa = PBXBuildFile; fileRef = FILE43; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FILE01 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FILE02 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRtcPhoneDialerApp.swift; sourceTree = "<group>"; };
+		FILE03 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLevelMeter.swift; sourceTree = "<group>"; };
+		FILE04 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		FILE05 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallState.swift; sourceTree = "<group>"; };
+		FILE06 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationState.swift; sourceTree = "<group>"; };
+		FILE07 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		FILE08 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDevice.swift; sourceTree = "<group>"; };
+		FILE09 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSession.swift; sourceTree = "<group>"; };
+		FILE10 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPConfiguration.swift; sourceTree = "<group>"; };
+		FILE11 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCMACodec.swift; sourceTree = "<group>"; };
+		FILE12 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCMUCodec.swift; sourceTree = "<group>"; };
+		FILE13 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTMFSender.swift; sourceTree = "<group>"; };
+		FILE14 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTPPacket.swift; sourceTree = "<group>"; };
+		FILE15 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTPSession.swift; sourceTree = "<group>"; };
+		FILE16 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STUNClient.swift; sourceTree = "<group>"; };
+		FILE17 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPAuth.swift; sourceTree = "<group>"; };
+		FILE18 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPHeaders.swift; sourceTree = "<group>"; };
+		FILE19 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPMessage.swift; sourceTree = "<group>"; };
+		FILE20 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPRegistrationAgent.swift; sourceTree = "<group>"; };
+		FILE21 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPTransaction.swift; sourceTree = "<group>"; };
+		FILE22 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPURI.swift; sourceTree = "<group>"; };
+		FILE23 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPUserAgent.swift; sourceTree = "<group>"; };
+		FILE24 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDPParser.swift; sourceTree = "<group>"; };
+		FILE25 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSSChannel.swift; sourceTree = "<group>"; };
+		FILE26 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryService.swift; sourceTree = "<group>"; };
+		FILE27 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKitManager.swift; sourceTree = "<group>"; };
+		FILE28 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPService.swift; sourceTree = "<group>"; };
+		FILE29 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		FILE30 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidator.swift; sourceTree = "<group>"; };
+		FILE31 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewModel.swift; sourceTree = "<group>"; };
+		FILE32 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialerViewModel.swift; sourceTree = "<group>"; };
+		FILE33 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallViewModel.swift; sourceTree = "<group>"; };
+		FILE34 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		FILE35 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveCallView.swift; sourceTree = "<group>"; };
+		FILE36 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryRowView.swift; sourceTree = "<group>"; };
+		FILE37 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryView.swift; sourceTree = "<group>"; };
+		FILE38 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		FILE39 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialerView.swift; sourceTree = "<group>"; };
+		FILE40 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialPadView.swift; sourceTree = "<group>"; };
+		FILE41 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallView.swift; sourceTree = "<group>"; };
+		FILE42 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FILE43 = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FILE_INFOPLIST = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		APPPRODUCT = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = "WebRtcPhoneDialer-iOS.app";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		ROOTGROUP = {
 			isa = PBXGroup;
@@ -17,9 +117,161 @@
 		SRCGROUP = {
 			isa = PBXGroup;
 			children = (
+				GRP_APP,
+				GRP_AUDIO,
+				GRP_ENUMS,
+				GRP_MODELS,
+				GRP_RTP,
+				GRP_SIP,
+				GRP_SERVICES,
+				GRP_UTILS,
+				GRP_VM,
+				GRP_VIEWS,
+				GRP_RES,
+				FILE_INFOPLIST,
 			);
 			name = "WebRtcPhoneDialer-iOS";
 			path = "WebRtcPhoneDialer-iOS";
+			sourceTree = "<group>";
+		};
+		GRP_APP = {
+			isa = PBXGroup;
+			children = (
+				FILE01,
+				FILE02,
+			);
+			name = App;
+			path = App;
+			sourceTree = "<group>";
+		};
+		GRP_AUDIO = {
+			isa = PBXGroup;
+			children = (
+				FILE03,
+				FILE04,
+			);
+			name = Audio;
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		GRP_ENUMS = {
+			isa = PBXGroup;
+			children = (
+				FILE05,
+				FILE06,
+			);
+			name = Enums;
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		GRP_MODELS = {
+			isa = PBXGroup;
+			children = (
+				FILE07,
+				FILE08,
+				FILE09,
+				FILE10,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		GRP_RTP = {
+			isa = PBXGroup;
+			children = (
+				GRP_CODECS,
+				FILE13,
+				FILE14,
+				FILE15,
+				FILE16,
+			);
+			name = RTP;
+			path = RTP;
+			sourceTree = "<group>";
+		};
+		GRP_CODECS = {
+			isa = PBXGroup;
+			children = (
+				FILE11,
+				FILE12,
+			);
+			name = Codecs;
+			path = Codecs;
+			sourceTree = "<group>";
+		};
+		GRP_SIP = {
+			isa = PBXGroup;
+			children = (
+				FILE17,
+				FILE18,
+				FILE19,
+				FILE20,
+				FILE21,
+				FILE22,
+				FILE23,
+				FILE24,
+				FILE25,
+			);
+			name = SIP;
+			path = SIP;
+			sourceTree = "<group>";
+		};
+		GRP_SERVICES = {
+			isa = PBXGroup;
+			children = (
+				FILE26,
+				FILE27,
+				FILE28,
+			);
+			name = Services;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		GRP_UTILS = {
+			isa = PBXGroup;
+			children = (
+				FILE29,
+				FILE30,
+			);
+			name = Utilities;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		GRP_VM = {
+			isa = PBXGroup;
+			children = (
+				FILE31,
+				FILE32,
+				FILE33,
+				FILE34,
+			);
+			name = ViewModels;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		GRP_VIEWS = {
+			isa = PBXGroup;
+			children = (
+				FILE35,
+				FILE36,
+				FILE37,
+				FILE38,
+				FILE39,
+				FILE40,
+				FILE41,
+				FILE42,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		GRP_RES = {
+			isa = PBXGroup;
+			children = (
+				FILE43,
+			);
+			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -30,6 +282,7 @@
 			buildConfigurationList = BUILDCONFIGLIST_TARGET;
 			buildPhases = (
 				SOURCESBUILD,
+				RESOURCESBUILD,
 			);
 			buildRules = (
 			);
@@ -68,25 +321,68 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		RESOURCESBUILD = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF43,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		SOURCESBUILD = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF01,
+				BF02,
+				BF03,
+				BF04,
+				BF05,
+				BF06,
+				BF07,
+				BF08,
+				BF09,
+				BF10,
+				BF11,
+				BF12,
+				BF13,
+				BF14,
+				BF15,
+				BF16,
+				BF17,
+				BF18,
+				BF19,
+				BF20,
+				BF21,
+				BF22,
+				BF23,
+				BF24,
+				BF25,
+				BF26,
+				BF27,
+				BF28,
+				BF29,
+				BF30,
+				BF31,
+				BF32,
+				BF33,
+				BF34,
+				BF35,
+				BF36,
+				BF37,
+				BF38,
+				BF39,
+				BF40,
+				BF41,
+				BF42,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		APPPRODUCT = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.application;
-			includeInIndex = 0;
-			path = "WebRtcPhoneDialer-iOS.app";
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXFileReference section */
 
 /* Begin XCBuildConfiguration section */
 		DEBUG_PROJECT = {
@@ -102,6 +398,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -118,6 +415,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -131,15 +429,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "WebRtcPhoneDialer-iOS/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "VOIPAT Phone";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to make phone calls.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -147,6 +439,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.webrtcphonedialer.ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -160,15 +453,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "WebRtcPhoneDialer-iOS/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "VOIPAT Phone";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs microphone access to make phone calls.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -176,6 +463,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.webrtcphonedialer.ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
