@@ -3,6 +3,7 @@ import SwiftUI
 struct DialerView: View {
     @EnvironmentObject var sipService: SIPService
     @EnvironmentObject var callHistory: CallHistoryService
+    @EnvironmentObject var updateService: UpdateService
     @StateObject private var viewModel: ViewModelWrapper = ViewModelWrapper()
 
     var body: some View {
@@ -11,8 +12,21 @@ struct DialerView: View {
             Color(hex: "0D0D1A").ignoresSafeArea()
 
             if let vm = viewModel.dialerVM {
-                mainContent(vm: vm)
-                    .fullScreenCover(isPresented: Binding(
+                VStack(spacing: 8) {
+                    if let info = updateService.available {
+                        UpdateBanner(
+                            info: info,
+                            onOpen: {
+                                if let url = URL(string: info.releasePageUrl) { UIApplication.shared.open(url) }
+                            },
+                            onSkip: { updateService.skip(info.version) },
+                            onLater: { updateService.dismiss() }
+                        )
+                        .padding(.top, 8)
+                    }
+                    mainContent(vm: vm)
+                }
+                .fullScreenCover(isPresented: Binding(
                         get: { vm.showIncomingCall },
                         set: { vm.showIncomingCall = $0 }
                     )) {
