@@ -1,0 +1,56 @@
+name: Copy cert to VoipatDialer
+on: workflow_dispatch
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy certificate secret
+        env:
+          CERT_B64: ${{ secrets.CERTIFICATE_BASE64 }}
+          CERT_PASS: ${{ secrets.CERTIFICATE_PASSWORD }}
+          KEYCHAIN_PASS: ${{ secrets.KEYCHAIN_PASSWORD }}
+          PROV_B64: ${{ secrets.PROVISIONING_PROFILE_BASE64 }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Install pynacl
+          pip install pynacl -q
+          python3 - <<PYEOF
+          import os, base64, json, urllib.request
+          from nacl.public import PublicKey, SealedBox
+
+          token = os.environ['GH_TOKEN']
+          repo = 'asm2me/VoipatDialer'
+
+          def get_pub_key():
+              req = urllib.request.Request(
+                  f'https://api.github.com/repos/{repo}/actions/secrets/public-key',
+                  headers={'Authorization': f'token {token}', 'Accept': 'application/vnd.github.v3+json',
+                           'User-Agent': 'Python'})
+              return json.loads(urllib.request.urlopen(req).read())
+
+          def set_secret(name, value, key_id, pub_key_b64):
+              pub_key = PublicKey(base64.b64decode(pub_key_b64))
+              box = SealedBox(pub_key)
+              encrypted = base64.b64encode(box.encrypt(value.encode())).decode()
+              req = urllib.request.Request(
+                  f'https://api.github.com/repos/{repo}/actions/secrets/{name}',
+                  data=json.dumps({'encrypted_value': encrypted, 'key_id': key_id}).encode(),
+                  headers={'Authorization': f'token {token}', 'Accept': 'application/vnd.github.v3+json',
+                           'Content-Type': 'application/json', 'User-Agent': 'Python'},
+                  method='PUT')
+              urllib.request.urlopen(req)
+              print(f'{name}: OK')
+
+          pk = get_pub_key()
+          kid = pk['key_id']
+          pub = pk['key']
+
+          secrets = {
+              'CERTIFICATE_BASE64': os.environ['CERT_B64'],
+              'CERTIFICATE_PASSWORD': os.environ['CERT_PASS'],
+              'KEYCHAIN_PASSWORD': os.environ['KEYCHAIN_PASS'],
+              'PROVISIONING_PROFILE_BASE64': os.environ['PROV_B64'],
+          }
+          for n, v in secrets.items():
+              set_secret(n, v, kid, pub)
+          PYEOF
