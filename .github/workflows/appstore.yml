@@ -65,7 +65,7 @@ jobs:
             -project WebRtcPhoneDialer-iOS.xcodeproj \
             -scheme WebRtcPhoneDialer-iOS \
             -configuration Release \
-            -destination 'generic/platform=iOS' \
+            -sdk iphoneos \
             -archivePath $RUNNER_TEMP/WebRtcPhoneDialer.xcarchive \
             CODE_SIGN_STYLE=Manual \
             CODE_SIGN_IDENTITY="iPhone Distribution" \
