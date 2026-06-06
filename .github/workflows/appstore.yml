@@ -60,18 +60,21 @@ jobs:
 
       - name: Archive
         run: |
-          xcodebuild archive \
-            -project WebRtcPhoneDialer-iOS.xcodeproj \
-            -scheme WebRtcPhoneDialer-iOS \
-            -configuration Release \
-            -sdk iphoneos \
-            -destination 'generic/platform=iOS' \
-            -archivePath $RUNNER_TEMP/WebRtcPhoneDialer.xcarchive \
-            CODE_SIGN_STYLE=Manual \
-            CODE_SIGN_IDENTITY="iPhone Distribution" \
-            DEVELOPMENT_TEAM=YHHD7MGNB5 \
-            PROVISIONING_PROFILE_SPECIFIER="${{ secrets.PROVISIONING_PROFILE_NAME }}" \
+          COMMON_ARGS=(
+            -project WebRtcPhoneDialer-iOS.xcodeproj
+            -scheme WebRtcPhoneDialer-iOS
+            -configuration Release
+            -sdk iphoneos
+            -archivePath "$RUNNER_TEMP/WebRtcPhoneDialer.xcarchive"
+            CODE_SIGN_STYLE=Manual
+            "CODE_SIGN_IDENTITY=iPhone Distribution"
+            DEVELOPMENT_TEAM=YHHD7MGNB5
+            "PROVISIONING_PROFILE_SPECIFIER=${{ secrets.PROVISIONING_PROFILE_NAME }}"
             ASSETCATALOG_COMPILER_OPTIMIZATION=nothing
+          )
+          # Try with destination specifier (requires iOS platform installed)
+          xcodebuild archive "${COMMON_ARGS[@]}" -destination 'generic/platform=iOS' \
+            || xcodebuild archive "${COMMON_ARGS[@]}"
 
       - name: Export IPA
         run: |
