@@ -20,12 +20,9 @@ jobs:
       - name: Select Xcode
         run: |
           sudo xcode-select -s /Applications/Xcode_16.3.app/Contents/Developer
+          sudo xcodebuild -license accept 2>/dev/null || true
           sudo xcodebuild -runFirstLaunch
-          xcrun simctl list runtimes || true
-          if ! xcrun simctl list runtimes 2>&1 | grep -q "iOS"; then
-            echo "No iOS runtimes found — downloading platform..."
-            sudo xcodebuild -downloadPlatform iOS
-          fi
+          sudo xcodebuild -downloadPlatform iOS
 
       - name: Install Apple certificate
         env:
@@ -66,6 +63,7 @@ jobs:
             -scheme WebRtcPhoneDialer-iOS \
             -configuration Release \
             -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
             -archivePath $RUNNER_TEMP/WebRtcPhoneDialer.xcarchive \
             CODE_SIGN_STYLE=Manual \
             CODE_SIGN_IDENTITY="iPhone Distribution" \
