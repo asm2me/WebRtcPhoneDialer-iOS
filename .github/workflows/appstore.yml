@@ -59,6 +59,7 @@ jobs:
             -archivePath $RUNNER_TEMP/WebRtcPhoneDialer.xcarchive \
             CODE_SIGN_STYLE=Manual \
             CODE_SIGN_IDENTITY="iPhone Distribution" \
+            DEVELOPMENT_TEAM=YHHD7MGNB5 \
             PROVISIONING_PROFILE_SPECIFIER="${{ secrets.PROVISIONING_PROFILE_NAME }}"
 
       - name: Export IPA
