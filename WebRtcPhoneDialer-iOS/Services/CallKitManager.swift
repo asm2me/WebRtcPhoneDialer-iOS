@@ -19,8 +19,7 @@ class CallKitManager: NSObject {
     private var activeCallUUID: UUID?
 
     override init() {
-        let config = CXProviderConfiguration()
-        config.localizedName = "VOIPAT Phone"
+        let config = CXProviderConfiguration(localizedName: "VOIPAT Phone")
         config.maximumCallGroups = 1
         config.maximumCallsPerCallGroup = 1
         config.supportsVideo = false

@@ -165,7 +165,7 @@ class RTPSession {
         connection = nil
         listener?.cancel()
         listener = nil
-        Log.rtp.info("RTP session stopped. Sent: \(packetsSent) packets, Received: \(packetsReceived) packets")
+        Log.rtp.info("RTP session stopped. Sent: \(self.packetsSent) packets, Received: \(self.packetsReceived) packets")
     }
 
     // MARK: - Private

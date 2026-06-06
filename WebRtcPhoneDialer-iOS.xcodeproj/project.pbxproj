@@ -50,6 +50,7 @@
 		BF41 = { isa = PBXBuildFile; fileRef = FILE41; };
 		BF42 = { isa = PBXBuildFile; fileRef = FILE42; };
 		BF43 = { isa = PBXBuildFile; fileRef = FILE43; };
+		BF44 = { isa = PBXBuildFile; fileRef = FILE44; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		FILE41 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallView.swift; sourceTree = "<group>"; };
 		FILE42 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FILE43 = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FILE44 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
 		FILE_INFOPLIST = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		APPPRODUCT = {
 			isa = PBXFileReference;
@@ -222,6 +224,7 @@
 				FILE26,
 				FILE27,
 				FILE28,
+				FILE44,
 			);
 			name = Services;
 			path = Services;
@@ -379,6 +382,7 @@
 				BF40,
 				BF41,
 				BF42,
+				BF44,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -44,8 +44,7 @@ class SIPService: ObservableObject {
 
     // MARK: - Init
 
-    override init() {
-        super.init()
+    init() {
         callKitManager.delegate = self
         settings = AppSettings.load()
         config = SIPConfiguration(from: settings)
