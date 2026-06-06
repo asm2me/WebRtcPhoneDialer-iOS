@@ -18,7 +18,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode_16.3.app/Contents/Developer
+        run: |
+          sudo xcode-select -s /Applications/Xcode_16.3.app/Contents/Developer
+          sudo xcodebuild -runFirstLaunch
+          xcrun simctl list runtimes || true
+          if ! xcrun simctl list runtimes 2>&1 | grep -q "iOS"; then
+            echo "No iOS runtimes found — downloading platform..."
+            sudo xcodebuild -downloadPlatform iOS
+          fi
 
       - name: Install Apple certificate
         env:
